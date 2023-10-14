@@ -1,0 +1,9 @@
+stages:
+  - build
+
+build:
+  stage: build
+  script:
+    - echo "Building with Docker"
+    - npm run build                # Build your project
+    - npm test                     # Run tests
