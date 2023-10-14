@@ -1,25 +1,10 @@
 {
-  "name": "curso-cypress",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  
+  "devDependencies": {
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "cypress:open": "Cypress open",
     "start": "node server.js",
     "build": "webpack --mode production"
-  },
-
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "cypress": "^9.0.0",
-    "cypress-xpath": "^1.6.2"
-  },
-
-  "devDependencies": {
-    "webpack": "^5.89.0"
   }
 }
