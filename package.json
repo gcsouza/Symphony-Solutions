@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "runHeadless": "npx cypress run --spec 'cypress/integration/AQA-SR/APITest.spec.js,cypress/integration/AQA-SR/webAutomation.spec.js' --headless",
-    "runHeaded": "npx cypress run --spec 'cypress/integration/AQA-SR/APITest.spec.js,cypress/integration/AQA-SR/webAutomation.spec.js' --headed --browser chrome "
+    "runHeadless": "npx cypress run --spec 'cypress/e2e/AQA-SR/APITest.cy.js,cypress/e2e/AQA-SR/webAutomation.cy.js' --headless",
+    "runHeaded": "npx cypress run --spec 'cypress/e2e/AQA-SR/APITest.cy.js,cypress/e2e/AQA-SR/webAutomation.cy.js' --headed --browser chrome "
   },
   "author": "Gustavo Cavalcante",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^4.11.0"
+    "cypress": "^13.3.1"
   }
 }

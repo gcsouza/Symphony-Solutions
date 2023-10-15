@@ -6,5 +6,8 @@ cypress_headless:
   image: cypress/browsers:latest
   script:
     - npm install
-    - npm run runHeadless --spec "cypress/integration/AQA-SR/APITest.spec.js,cypress/integration/AQA-SR/webAutomation.spec.js"
+    - npm run runHeadless --spec "cypress/e2e/AQA-SR/APITest.cy.js,cypress/e2e/AQA-SR/webAutomation.cy.js"
     - npx cypress run
+
+
+    
