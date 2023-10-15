@@ -1,13 +1,16 @@
 stages:
   - test
 
-test:
-  image: node:latest
+cypress_headless:
   stage: test
+  image: cypress/base:14
   script:
-    # install dependencies
-    - npm ci
-    # start the server in the background
-    - npm start &
-    # run Cypress tests
-    - npm run e2e
+    - npm install
+    - npm run runHeadless --spec "cypress\integration\AQA-SR\APITest.spec.js,cypress\integration\AQA-SR\webAutomation.spec.js"
+
+cypress_headed:
+  stage: test
+  image: cypress/base:14
+  script:
+    - npm install
+    - npm run runHeaded --spec "cypress\integration\AQA-SR\APITest.spec.js,cypress\integration\AQA-SR\webAutomation.spec.js"
