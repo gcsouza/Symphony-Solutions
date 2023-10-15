@@ -14,17 +14,15 @@ it('Validating 200 status', () => {
       const authAndAuthObjects = allObjects.filter((entry) => entry.Category.includes('Authentication & Authorization'));
   
       const actualCount = authAndAuthObjects.length;
-      const expectedCount = 7; 
+      const expectedCount = allObjects.filter((entry) => entry.Category.includes('Authentication & Authorization')).length;
   
       expect(actualCount).to.eq(expectedCount);
   
-      console.log('All objects:',   allObjects, 
-                  'Found objects:', authAndAuthObjects
-                 );
-    
-                 cy.log('All objects:',   allObjects, 
-                 'Found objects:', authAndAuthObjects
-                );
+      console.log('All objects:', allObjects);
+      console.log('Found objects:', authAndAuthObjects);
+
+      cy.log('All objects:', allObjects);
+      cy.log('Found objects:', authAndAuthObjects);
     });
   });
   

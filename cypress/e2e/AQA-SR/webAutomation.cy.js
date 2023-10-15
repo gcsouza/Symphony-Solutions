@@ -1,17 +1,18 @@
-/// <reference types="cypress-xpath" />
-
 import loc from '../../support/locators'
-import '../../support/commandsPage'
+import '../../support/commands'
 
 
-describe('Should test at a functional level', () => {
-
-    before (() => {
+describe('Validating successful login and name sorted test', () => {
+    beforeEach (() => {
         cy.login()
     })
   
-    it('Should verify title', () =>{
+    it('Should verify title on the home page', () =>{
         cy.homePage()
+    })
+
+    it('Should Log in and check if the items are ordered correctly Name ( Z -> A)', () =>{
+        cy.functionTest()
     })
 
 })

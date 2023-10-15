@@ -7,11 +7,15 @@ const locators = {
 
     HOME: {
         APP_LOGO: '.app_logo',
+        TITTLE: 'Swag Labs'
     },
 
     ITEMS: {
       SORT_CONTAINER: '[data-test=product_sort_container]',
       SETTINGS: '[data-test=menu-settings]',
+      ASCENDING_NAME_ORDER: 'Name (A to Z)',
+      DESCENDING_NAME_ORDER: 'za',
+      NAME_AZ: 'az',
     },
 
 }
