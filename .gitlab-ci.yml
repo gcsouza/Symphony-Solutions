@@ -3,14 +3,7 @@ stages:
 
 cypress_headless:
   stage: test
-  image: cypress/base:14
+  image: cypress/browsers:chrome87
   script:
     - npm install
-    - npm run runHeadless --spec "cypress\integration\AQA-SR\APITest.spec.js,cypress\integration\AQA-SR\webAutomation.spec.js"
-
-cypress_headed:
-  stage: test
-  image: cypress/base:14
-  script:
-    - npm install
-    - npm run runHeaded --spec "cypress\integration\AQA-SR\APITest.spec.js,cypress\integration\AQA-SR\webAutomation.spec.js"
+    - npm run runHeadless --spec "cypress/integration/APITest.spec.js,cypress/integration/webAutomation.spec.js"
