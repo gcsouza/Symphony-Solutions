@@ -7,3 +7,5 @@ cypress_headless:
   script:
     - npm install
     - npm run runHeadless --spec "cypress/integration/APITest.spec.js,cypress/integration/webAutomation.spec.js"
+    - npx cypress run
+
