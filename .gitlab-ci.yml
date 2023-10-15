@@ -1,4 +1,9 @@
-job_automation_testing:
+image: cypress/base:10
+
+stages:
+  - test
+test:
+  stage: test
   script:
-    - echo "Automation pipeline"
-  when: manual
+    - npm install
+    - npm run runHeadless
