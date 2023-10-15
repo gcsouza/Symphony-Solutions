@@ -1,3 +1,5 @@
+describe('Automated API test ', () => {
+
 beforeEach(() => {
   cy.request('https://api.publicapis.org/entries').as('apiRequest');
 });
@@ -25,5 +27,5 @@ it('Validating 200 status', () => {
       cy.log('Found objects:', authAndAuthObjects);
     });
   });
-  
+})
   

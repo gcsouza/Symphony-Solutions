@@ -1,4 +1,3 @@
-import loc from '../../support/locators'
 import '../../support/commands'
 
 
@@ -14,5 +13,4 @@ describe('Validating successful login and name sorted test', () => {
     it('Should Log in and check if the items are ordered correctly Name ( Z -> A)', () =>{
         cy.functionTest()
     })
-
 })

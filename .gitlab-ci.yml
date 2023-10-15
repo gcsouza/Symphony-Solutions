@@ -4,11 +4,9 @@ stages:
 cypress_headless:
   stage: test
   image: cypress/browsers:latest
-  tags: test-cypress
+  tags:
+    - test-cypress
   script:
     - npm install
     - npm run runHeadless --spec "cypress/e2e/AQA-SR/APITest.cy.js,cypress/e2e/AQA-SR/webAutomation.cy.js"
     - npx cypress run
-
-
-    
