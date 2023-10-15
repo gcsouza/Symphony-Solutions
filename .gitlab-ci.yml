@@ -1,9 +1,4 @@
-stages:
-  - build
-
-build:
-  stage: build
+job_automation_testing:
   script:
-    - echo "Building with Docker"
-    - npm run build                # Build your project
-    - npm test                     # Run tests
+    - echo "Automation pipeline"
+  when: manual
